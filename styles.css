@@ -54,3 +54,18 @@ nav {
   color: white;
   padding: 10px;
 }
+
+.btn {
+  background: #ff3d00;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.search-field {
+  padding: 10px 10px;
+}
+.search-button {
+  padding: 10px 10px;
+}
