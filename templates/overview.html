@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lexend+Deca:wght@300;400&family=Montserrat:ital,wght@1,900&family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/245622a427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebShop</title>
+  </head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  
+  
+}
+body {
+  background: rgb(16, 20, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 20, 1) 0%,
+    rgba(33, 43, 42, 1) 99%
+  );
+  height: 100%;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.logo {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.nav-links {
+  padding: 28px 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+}
+.fa-solid {
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  background: #ff3d00;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.search-field {
+  padding: 10px;
+}
+.submit-button {
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.cards {
+  width: 200px;
+  height: 330px;
+  border: 1px solid rgb(148, 147, 147);
+  border-radius: 9px;
+  position: relative;
+  background: rgb(16, 20, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 20, 1) 0%,
+    rgba(53, 68, 66, 1) 99%
+  );
+}
+
+.card-container {
+  display: flex;
+  /* lets cards go on different rows */
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.add-to-cart {
+  display: flex;
+  padding: 4px;
+  right: 0;
+  margin: 3px 3px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  background: greenyellow;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cards img {
+  border-radius: 9px 9px 0px 0px;
+  width: 100%;
+}
+.movie-info {
+  margin-left: 3px;
+}
+
+</style>
+
+  <body>
+    <div class="header">
+      <nav>
+        <h1 class="logo">WebShop</h1>
+        <ul class="nav-links">
+          <input class="search-field" type="text" placeholder="Search..." />
+          <button class="submit-button" type="submit">Submit</button>
+          <li><a href="#">Home</a></li>
+          <li><a href="">Login</button></a></li>
+          <li>
+            <button class="btn"><a href="">Sign up</a></button>
+          </li>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="card-container">
+      {%PRODUCT_CARDS%}
+  </div>
+  
+  </body>
+</html>
