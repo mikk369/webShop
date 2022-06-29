@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lexend+Deca:wght@300;400&family=Montserrat:ital,wght@1,900&family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/245622a427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebShop</title>
+  </head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cards {
+  width: 200px;
+  height: 330px;
+  border: 1px solid rgb(148, 147, 147);
+  border-radius: 9px;
+  position: relative;
+  background: rgb(16, 20, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 20, 1) 0%,
+    rgba(53, 68, 66, 1) 99%
+  );
+}
+
+.card-container {
+  margin-top: 30px;
+  /* display: flex; */
+
+  /* justify-content: space-around; */
+  padding: 60px;
+}
+
+.add-to-cart {
+  display: flex;
+  padding: 4px;
+  right: 0;
+  margin: 3px 3px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  background: greenyellow;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cards img {
+  border-radius: 9px 9px 0px 0px;
+  width: 100%;
+}
+.movie-info {
+  margin-left: 3px;
+}
+
+</style>
+
+<body>
+  <div class="card-container">
+      <div class="cards">
+        <img src="../data/bollywood.jpg" alt="image">
+      </hr>
+      <div class="movie-info">
+        <h3 class="movie-name">{%TITLE%}</h3>
+        <p class="movie-genre">{%GENRE%}</p>
+        <p class="movie-year">{%YEAR%}</p>
+        <p class="movie-price">{%PRICE%} €</p>
+      </div>
+      <button class="add-to-cart">Add Cart</button>
+    </div>
+  </div>
+  
+</body>
+</html>
